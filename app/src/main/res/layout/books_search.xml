@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto"
+			  android:orientation="vertical"
+			  android:layout_width="match_parent"
+			  android:layout_height="match_parent">
+
+	<androidx.appcompat.widget.Toolbar
+			android:id="@+id/search_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:layout_constraintTop_toTopOf="parent">
+
+		<RelativeLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent">
+
+			<ImageView
+					android:id="@+id/go_back_button"
+					android:layout_marginTop="38dp"
+					android:layout_marginEnd="24dp"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:background="@drawable/ic_arrow_back"
+					android:layout_alignParentStart="true"/>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="32dp"
+					android:layout_marginStart="48dp"
+					android:text="Search"
+					android:textStyle="bold"
+					android:textColor="@color/design_default_color_on_secondary"
+					android:textSize="32sp"/>
+		</RelativeLayout>
+
+	</androidx.appcompat.widget.Toolbar>
+
+	<studio.carbonylgroup.textfieldboxes.TextFieldBoxes
+			android:id="@+id/search_field_box"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginBottom="16dp"
+			android:layout_margin="16dp"
+			app:labelText="Title, author, etc."
+			app:primaryColor="@color/activeColor"
+			app:secondaryColor="@color/activeColor">
+
+		<studio.carbonylgroup.textfieldboxes.ExtendedEditText
+				android:id="@+id/search_edit_text"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/design_default_color_on_secondary"/>
+
+	</studio.carbonylgroup.textfieldboxes.TextFieldBoxes>
+
+	<TextView
+			android:id="@+id/search_text"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Categories"
+			android:textColor="@color/design_default_color_on_secondary"
+			android:textSize="16sp"
+			android:gravity="center"/>
+
+	<androidx.recyclerview.widget.RecyclerView
+			android:id="@+id/books_categories_recycler_view"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:clipToPadding="false"
+			android:paddingBottom="32dp"/>
+
+</LinearLayout>

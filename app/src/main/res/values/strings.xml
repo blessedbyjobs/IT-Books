@@ -1,0 +1,22 @@
+<resources>
+	<string name="app_name">IT-BOOKS</string>
+
+	<string name="app_title">IT-Books</string>
+	<string name="hot_releases">Hot releases</string>
+	<string name="book_search">Find your book</string>
+	<string name="go_to_categories_title">Categories</string>
+
+	<string name="internet_error_text">Отсутствует интернет-соединение.\nПопробуйте позже</string>
+	<string name="hot_releases_error_text">При обращении к серверу произошла ошибка.\nПопробуйте позже</string>
+
+
+	// детальный просмотр
+	<string name="detail_title">Title</string>
+	<string name="detail_subtitle">Subtitle</string>
+	<string name="detail_author">Author</string>
+	<string name="detail_publisher">Publisher</string>
+	<string name="detail_language">Language</string>
+	<string name="detail_description">Description</string>
+	<string name="detail_price">Price</string>
+	<string name="detail_year">Year</string>
+</resources>
